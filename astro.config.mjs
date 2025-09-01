@@ -18,6 +18,12 @@ export default defineConfig({
 						{ label: 'Introduction', slug: 'lution/introduction' },
 						{ label: 'Installation', slug: 'lution/installation' },
 					],
+				},
+				{
+					label : 'Lution Marketplace',
+					items : [
+						{ label: 'Add your own theme/mods into the marketplace', slug: 'lutionmarketplace/addtheme' },
+					],
 				}
 			],
 		}),
