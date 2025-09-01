@@ -1,17 +1,43 @@
-/*
- * This is the correct way to import Google Fonts
- * Make sure this is at the very top of your CSS file
- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-
-
-/* Apply Lexend to the headings for a bold, modern look */
 :root {
-  --sl-font-headline: "Lexend", sans-serif;
+  --sl-font-system: 'Lexend Variable', sans-serif;
 }
 
-/* Apply Inter to the body text for better readability */
+body {
+  font-family: var(--sl-font-system);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sl-font-system);
+}
+
+
+
+/* Dark mode colors. */
 :root {
-  --sl-font: "Inter", sans-serif;
+	--sl-color-accent-low: #002935;
+	--sl-color-accent: #007594;
+	--sl-color-accent-high: #85d6f4;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eeeeee;
+	--sl-color-gray-2: #c2c2c2;
+	--sl-color-gray-3: #8b8b8b;
+	--sl-color-gray-4: #585858;
+	--sl-color-gray-5: #383838;
+	--sl-color-gray-6: #272727;
+	--sl-color-black: #181818;
+}
+/* Light mode colors. */
+:root[data-theme='light'] {
+	--sl-color-accent-low: #a7e1f8;
+	--sl-color-accent: #007290;
+	--sl-color-accent-high: #003849;
+	--sl-color-white: #181818;
+	--sl-color-gray-1: #272727;
+	--sl-color-gray-2: #383838;
+	--sl-color-gray-3: #585858;
+	--sl-color-gray-4: #8b8b8b;
+	--sl-color-gray-5: #c2c2c2;
+	--sl-color-gray-6: #eeeeee;
+	--sl-color-gray-7: #f6f6f6;
+	--sl-color-black: #ffffff;
 }
