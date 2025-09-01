@@ -10,7 +10,12 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/wookhq/lution' }, { icon: 'discord', label: 'Discord', href: 'https://discord.gg/BXT7FYjTBa' }],
 			customCss: [
 				'./src/styles/global.css',
+				  '@fontsource-variable/lexend/index.css',
 			],
+			logo: {
+				src: './src/assets/lutiontext.svg',
+				replacesTitle: true,
+			},
 			sidebar: [
 				{
 					label : 'Lution',
