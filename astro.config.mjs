@@ -13,16 +13,12 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+					label : 'Lution',
+					items : [
+						{ label: 'Introduction', slug: 'lution/introduction' },
+						{ label: 'Installation', slug: 'lution/installation' },
 					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
-				},
+				}
 			],
 		}),
 	],
