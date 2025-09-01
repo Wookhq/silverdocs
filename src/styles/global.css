@@ -1,0 +1,17 @@
+/*
+ * This is the correct way to import Google Fonts
+ * Make sure this is at the very top of your CSS file
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+
+/* Apply Lexend to the headings for a bold, modern look */
+:root {
+  --sl-font-headline: "Lexend", sans-serif;
+}
+
+/* Apply Inter to the body text for better readability */
+:root {
+  --sl-font: "Inter", sans-serif;
+}

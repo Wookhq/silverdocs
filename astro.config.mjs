@@ -8,6 +8,9 @@ export default defineConfig({
 		starlight({
 			title: 'Lution',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/wookhq/lution' }, { icon: 'discord', label: 'Discord', href: 'https://discord.gg/BXT7FYjTBa' }],
+			customCss: [
+				'./src/styles/global.css',
+			],
 			sidebar: [
 				{
 					label: 'Guides',
