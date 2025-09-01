@@ -28,6 +28,7 @@ export default defineConfig({
 					label : 'Lution Marketplace',
 					items : [
 						{ label: 'Add your own theme/mods into the marketplace', slug: 'lutionmarketplace/addtheme' },
+						{ label: 'Create your own marketplace provider', slug: 'lutionmarketplace/ownmrk' },
 					],
 				}
 			],
