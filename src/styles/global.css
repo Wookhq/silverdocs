@@ -10,7 +10,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--sl-font-system);
 }
 
-
+header {
+	background: rgba(255, 255, 255, 0); /* lil transparent */
+	backdrop-filter: blur(10px); /* the frosty part */
+	-webkit-backdrop-filter: blur(10px); /* safari being safari */
+	border: 1px solid rgba(255, 255, 255, 0.081); /* glass edge shine */
+}
+  
 
 /* Dark mode colors. */
 :root {
