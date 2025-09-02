@@ -4,7 +4,7 @@ description: what
 ---
 
 
-**Lution** is a Python-powered bootstrapper for [Sober](https://github.com/SoberX/Sober), the Roblox client for Linux. It’s kind of like **Bloxstrap**, but built for Linux users who want a smoother experience — and yep, it works with your Bloxstrap mods too.
+**Lution** is a Python-powered bootstrapper for [Sober](https://github.com/Vinegarhq/Sober), the Roblox client for Linux. It’s kind of like **Bloxstrap**, but built for Linux users who want a smoother experience — and yep, it works with your Bloxstrap mods too.
 
 ###  Why Use Lution?
 
