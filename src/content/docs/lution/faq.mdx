@@ -1,23 +1,51 @@
 ---
-title : FAQ
-description : what
-editUrl : https://github.com/Wookhq/lutiondocs/blob/main/src/content/docs/lution/faq.mdx
+title: FAQ
+description: Frequently Asked Questions about Lution
+editUrl: https://github.com/Wookhq/lutiondocs/blob/main/src/content/docs/lution/faq.mdx
 ---
 import Analytics from '@vercel/analytics/astro'
 
 ***
+
 ### Does Bloxstrap FFlags work on Lution?
-Bloxstrap FFlags **should work on Lution (Sober)** as long as the FFlag isn't exclusive to the Windows platform. Some FFlags are designed to only work on Windows and are not compatible with Android.
+Bloxstrap FFlags **should work on Lution (Sober)** as long as the FFlag isn’t exclusive to Windows. Some FFlags are Windows-only and won’t be compatible with Android/Linux.
 
 ***
+
 ### Will Lution work on Linux Mint?
-Yes, Lution **will work on Linux Mint** as long as you have **Python** installed and follow the official documentation for setup. Lution is designed to be compatible with most Linux distributions.
+Yes. Lution **works on Linux Mint** as long as you have **Python** installed and follow the [official setup guide](/lution/installation/).  
+It’s built to be compatible with most Linux distributions.
 
 ***
-### What if one day I get my Roblox account stolen by using Lution?
-Lution is an **open-source project**, meaning its source code is publicly available for anyone to review. This transparency allows the community to audit the code for any malicious or insecure practices. While it's always important to be cautious when using third-party software, the open-source nature of Lution provides a level of assurance because the code is not hidden. Additionally, Lution is designed to work exclusively on the Linux operating system. 
+
+### Is Lution a fork of Bloxstrap/Fishstrap?
+**No.** Lution is written entirely from scratch. While projects like Bloxstrap and Fishstrap served as inspiration, Lution is its own independent project.
 
 ***
-### I ran into a unkown error, what should I do?
-You should join our official [Discord server](https://discord.com/invite/BXT7FYjTBa) for support.
+
+### Is Lution bannable?
+**No.**  
+Lution is not bannable because it doesn’t interfere with the Sober client directly. It only modifies textures and FFlags, which are safe to use.
+
+***
+
+### What if my Roblox account gets stolen while using Lution?
+Lution is an **open-source project**, meaning the source code is public and reviewable by anyone.  
+This transparency allows the community to audit the code for security. While caution is always recommended when using third-party tools, the open-source nature of Lution provides an extra layer of trust.  
+Additionally, Lution is designed exclusively for Linux.
+
+***
+
+### I uninstalled Lution, but I still see “Lution with Sober”
+You also need to manually remove the desktop entry:  
+```bash
+rm ~/.local/share/applications/Lution.desktop
+````
+
+---
+
+### I ran into an unknown error, what should I do?
+
+Join our official [Discord server](https://discord.com/invite/BXT7FYjTBa) for support.
+
 <Analytics />
