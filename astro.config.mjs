@@ -24,6 +24,7 @@ export default defineConfig({
 						{ label: 'Installation', slug: 'lution/installation' },
 						{ label: 'Uninstalling Lution', slug: 'lution/uninstall' },
 						{ label: 'FAQ', slug: 'lution/faq' },
+						{ label: 'Reviews', slug: 'funstuff/reviews' },
 					],
 				},
 				{
