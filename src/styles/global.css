@@ -1,49 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom font */
 :root {
-  --sl-font-system: 'Lexend Variable', sans-serif;
+  --sl-font-system: 'Lexend Variable', sans-serif;	
 }
 
 body {
   font-family: var(--sl-font-system);
+  background: var(--custom-bg-gradient);
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--sl-font-system);
 }
 
+/* frosty glass header */
+.sidebar-content,
 header {
-	background: rgba(255, 255, 255, 0); /* lil transparent */
-	backdrop-filter: blur(10px); /* the frosty part */
-	-webkit-backdrop-filter: blur(10px); /* safari being safari */
-	border: 1px solid rgba(255, 255, 255, 0.081); /* glass edge shine */
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.081);
 }
-  
 
-/* Dark mode colors. */
-:root {
-	--sl-color-accent-low: #002935;
-	--sl-color-accent: #007594;
-	--sl-color-accent-high: #85d6f4;
-	--sl-color-white: #ffffff;
-	--sl-color-gray-1: #eeeeee;
-	--sl-color-gray-2: #c2c2c2;
-	--sl-color-gray-3: #8b8b8b;
-	--sl-color-gray-4: #585858;
-	--sl-color-gray-5: #383838;
-	--sl-color-gray-6: #272727;
-	--sl-color-black: #181818;
+
+/* gradient text on main h1 */
+h1#_top.astro-jbfsktt5 {
+  background: linear-gradient(90deg, #51b1ff 29%, #3b9dff 85%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
-/* Light mode colors. */
+
+/* hero page background stays gradient */
+body:has(.hero.astro-jbf5ktt5),
+body:has([class*="hero"]) {
+  background: var(--custom-bg-gradient);
+  background-color: transparent;
+}
+
+body:has(.hero) header {
+  background: rgba(36, 39, 47, 0.02);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: none;
+}
+
+/* alt background for inner pages */
+html.astro-bgw2111 body {
+  background: var(--custom-bg-gradient) !important;
+}
+
+/* hide "PyDocs" text in header logo */
+.site-title span {
+  display: none !important;
+}
+
+/* dark mode colors */
+:root {
+  --sl-color-accent-low: #002935;
+  --sl-color-accent: #007594;
+  --sl-color-accent-high: #85d6f4;
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #eeeeee;
+  --sl-color-gray-2: #c2c2c2;
+  --sl-color-gray-3: #8b8b8b;
+  --sl-color-gray-4: #585858;
+  --sl-color-gray-5: #383838;
+  --sl-color-gray-6: #272727;
+  --sl-color-black: #181818;
+    /* Fondo personalizado */
+  --custom-bg-gradient: radial-gradient(
+    ellipse 80% 80% at 50% -20%,
+    rgba(0, 162, 255, 0.3),
+    #1d2238
+  );
+}
+
+/* light mode colors */
 :root[data-theme='light'] {
-	--sl-color-accent-low: #a7e1f8;
-	--sl-color-accent: #007290;
-	--sl-color-accent-high: #003849;
-	--sl-color-white: #181818;
-	--sl-color-gray-1: #272727;
-	--sl-color-gray-2: #383838;
-	--sl-color-gray-3: #585858;
-	--sl-color-gray-4: #8b8b8b;
-	--sl-color-gray-5: #c2c2c2;
-	--sl-color-gray-6: #eeeeee;
-	--sl-color-gray-7: #f6f6f6;
-	--sl-color-black: #ffffff;
+  --sl-color-accent-low: #a7e1f8;
+  --sl-color-accent: #007290;
+  --sl-color-accent-high: #003849;
+  --sl-color-white: #181818;
+  --sl-color-gray-1: #272727;
+  --sl-color-gray-2: #383838;
+  --sl-color-gray-3: #585858;
+  --sl-color-gray-4: #8b8b8b;
+  --sl-color-gray-5: #c2c2c2;
+  --sl-color-gray-6: #eeeeee;
+  --sl-color-gray-7: #f6f6f6;
+  --sl-color-black: #ffffff;
+
+    --custom-bg-gradient: radial-gradient(
+    ellipse 60% 100% at 100% 50%,
+    rgba(3, 129, 255, 0.29),
+    #f0eeee
+  );
+
+
 }
