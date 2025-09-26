@@ -15,7 +15,7 @@ export default defineConfig({
                 '@fontsource-variable/lexend/index.css',
           ],
           logo: {
-              src: './src/assets/lutiontext.svg',
+              src: './src/assets/silvertext.svg',
               replacesTitle: true,
           },
           sidebar: [
