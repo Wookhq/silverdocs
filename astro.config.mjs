@@ -20,11 +20,19 @@ export default defineConfig({
           },
           sidebar: [
               {
+                  label : 'Silver',
+                  items : [
+                      { label: 'FAQ', slug: 'silver/faq' },
+                  ],
+                  
+              },
+              {
                   label : 'Installation',
                   items : [
                       { label: 'Installation', slug: 'installation/installation' },
                       { label: 'Build from source', slug: 'installation/build' },
                   ],
+                  
               }
           ],
       }),
