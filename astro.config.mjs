@@ -20,13 +20,10 @@ export default defineConfig({
           },
           sidebar: [
               {
-                  label : 'Silver',
+                  label : 'Installation',
                   items : [
-                      { label: 'Introduction', slug: 'lution/introduction' },
-                      { label: 'Installation', slug: 'lution/installation' },
-                      { label: 'Uninstalling Lution', slug: 'lution/uninstall' },
-                      { label: 'FAQ', slug: 'lution/faq' },
-                      { label: 'Reviews', slug: 'funstuff/reviews' },
+                      { label: 'Installation', slug: 'installation/installation' },
+                      { label: 'Build from source', slug: 'installation/build' },
                   ],
               }
           ],
